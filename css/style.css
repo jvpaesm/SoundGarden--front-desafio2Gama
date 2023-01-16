@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+body{
+    font-family: 'Questrial', sans-serif;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+header {
+    position: relative;
+    box-shadow: 0px 5px 4px 0px rgb(63 63 63 / 27%);
+    width: 100%;
+    background-color: #fff;
+}
+aside {
+    min-height: 100vh;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #C2185B;
+}
+
+.btn-primary{
+    background-color: #C2185B;
+    border-color: #C2185B;
+}
+
+main.login {
+    width: 400px;
+}
+
+section.full{
+    width: 100%;
+    min-height: 80vh;
+    padding: 50px 0;
+}
+
+article.evento {
+    width: 350px;
+}
+
+footer nav ul{
+    list-style: none;
+    display: flex;
+}
+
+footer nav ul li  {
+    padding: 10px;
+}
+
+#close-modal {
+    padding: .6rem 1.2rem;
+    background-color: #888;
+    color: wheat;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    opacity: .9;
+    font-size: 1rem;
+    transition: 0.4s;
+}#close-modal:hover{opacity: 1;}
+
+#fade, #modal{
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 5  ;
+}
+
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 10;
+    width: 600px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: .5rem;
+}
+
+.modal-header {
+    display: flex;
+
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal-body p {
+    margin-bottom: 1rem;
+}
+
+#modal.hide,
+#fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#formModal {
+    margin: auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+#formModal button {
+    padding: .375rem .75rem;
+    width: 100px;
+    border: none;
+    border-radius: .25rem;
+    background-color: #C2185B;
+    color: white;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+    transition: color .15s ease-in-out;
+}
+
+#formModal input {
+
+    margin-bottom: 1rem;
+    padding: .375rem .75rem;
+}
